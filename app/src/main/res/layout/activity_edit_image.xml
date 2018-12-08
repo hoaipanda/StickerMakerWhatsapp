@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditImageActivity">
+
+    <RelativeLayout
+        android:id="@+id/lyTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/back"
+            android:tint="#fff" />
+
+        <com.sticker.stickermakerwhatsapp.CustomTextBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Edit sticker"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imDone"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/done" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lyBot"
+        android:layout_below="@+id/lyTop">
+
+        <RelativeLayout
+            android:id="@+id/lyImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <com.xiaopo.flying.sticker.StickerView
+                android:id="@+id/stickerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:borderColor="@color/green"
+                app:showBorder="true"
+                app:showIcons="true">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/review" />-->
+
+            </com.xiaopo.flying.sticker.StickerView>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyBot"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMenuEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyEmoji"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/lyBot"
+        android:background="#38e9e7e7"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvEmoji"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lySticker"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/lyBot"
+        android:background="@color/green"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMenuSticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

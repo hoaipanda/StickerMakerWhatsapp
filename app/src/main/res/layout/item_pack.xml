@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:id="@+id/lyTop"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <com.sticker.stickermakerwhatsapp.CustomTextRegular
+            android:id="@+id/tvNamePack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Sticker1"
+            android:textColor="#000" />
+
+        <com.sticker.stickermakerwhatsapp.CustomTextRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="hhoaii" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lyTop"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lyImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/imAdd"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@+id/imAdd"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+</RelativeLayout>

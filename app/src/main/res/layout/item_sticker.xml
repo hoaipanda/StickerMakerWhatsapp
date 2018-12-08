@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/boder_dash">
+
+    <ImageView
+        android:id="@+id/imAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/imTrayIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp" />
+
+    <RelativeLayout
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_margin="7dp"
+        android:background="@drawable/boder_number"
+        android:padding="3dp">
+
+        <com.sticker.stickermakerwhatsapp.CustomTextRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="7sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StickerMakerWhatsapp</string>
+
+
+
+    <string name="add_pack_fail_prompt_update_whatsapp">Sticker pack not added. If you\'d like to add it, make sure you update to the latest version of WhatsApp.</string>
+    <string name="add_pack_fail_prompt_update_play_link">Update</string>
+    <string name="cannot_find_play_store">Google Play is not installed on the device.</string>
+    <string name="title_validation_error">Error with the pack</string>
+    <string name="error_adding_sticker_pack">Could not add this sticker pack. Please install the latest version of WhatsApp before adding sticker pack</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imMenuEdit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:src="@drawable/sticker"
+        android:tint="#fff" />
+
+    <ImageView
+        android:id="@+id/imChoose"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/circle" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.DetailPackActivity">
+
+    <LinearLayout
+        android:id="@+id/lyTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:padding="15dp"
+            android:src="@drawable/back"
+            android:tint="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.sticker.stickermakerwhatsapp.CustomTextBold
+                android:id="@+id/tvNamePack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sticker 1"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <com.sticker.stickermakerwhatsapp.CustomTextRegular
+                android:id="@+id/tvPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hoaii"
+                android:textColor="#d9d8d8" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyTrayIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lyTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boder_dash">
+
+        <ImageView
+            android:id="@+id/imAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/imTrayIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/boder_trayicon"
+            android:padding="3dp">
+
+            <com.sticker.stickermakerwhatsapp.CustomTextRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tray Icon"
+                android:textColor="#fff"
+                android:textSize="7sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
